@@ -1,5 +1,5 @@
+//Super class ID contains only one field ID which will be the key element of other classes
 package com.army.models;
-
 public class ID {
     private int id;
 

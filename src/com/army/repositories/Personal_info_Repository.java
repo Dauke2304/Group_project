@@ -1,3 +1,4 @@
+//information about each functions below written in the interface where this class implements
 package com.army.repositories;
 
 import com.army.database.postgresql_idb;

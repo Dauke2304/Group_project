@@ -1,3 +1,4 @@
+//information about function written in the interface where this class implenets
 package com.army.database;
 
 import java.sql.*;

@@ -1,3 +1,4 @@
+//classical person class with main information fields sooner will be added new fields
 package com.army.models;
 
 public class Personal_info extends ID{

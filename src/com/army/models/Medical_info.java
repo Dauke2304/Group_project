@@ -1,3 +1,4 @@
+//class that contains medical information fields like height,weight,vision sooner will be added other option
 package com.army.models;
 
 import com.army.models.interfaces.i_medical_info;
@@ -77,7 +78,11 @@ public class Medical_info extends ID implements i_medical_info {
                 " Vision: " + vision+
                 " RESULT: " + res;
     }
-
+    /*
+    define_fit_to_army() takes 3 value height, weight, vision, by some coefficient
+    which is the result of division height and weight indicates normal ratio of height and weight,
+    and by checking vision state returns boolean value
+     */
     @Override
     public boolean define_fit_to_army(double height, double weight, double vision) {
         double average_ratio_of_height_and_weight = height/weight;
