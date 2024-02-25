@@ -11,8 +11,8 @@ public class Personal_info_controller {
     public Personal_info_controller(IPersonal_info_repository rep) {
     this.rep =rep;
     }
-    public String createPerson(String name,String surname, int age) {
-    Personal_info person = new Personal_info(name,surname,age);
+    public String createPerson(int id,String name,String surname, int age) {
+    Personal_info person = new Personal_info(id,name,surname,age);
     boolean created = rep.createPerson(person);
     return (created ? "Person was added!" : "Person addition was failed!");
     }

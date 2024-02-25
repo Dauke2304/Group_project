@@ -19,12 +19,13 @@ public class Personal_info_Repository implements IPersonal_info_repository {
         Connection cn = null;
         try {
             cn = db.getConnection();
-            String sql = "INSERT INTO personal_info(name,surname,age) VALUES (?,?,?)";
+            String sql = "INSERT INTO personal_info(id,name,surname,age) VALUES (?,?,?,?)";
             PreparedStatement st = cn.prepareStatement(sql);
 
-            st.setString(1, person.getName());
-            st.setString(2, person.getSurname());
-            st.setInt(3, person.getAge());
+            st.setInt(1, person.getId());
+            st.setString(2, person.getName());
+            st.setString(3, person.getSurname());
+            st.setInt(4, person.getAge());
 
             st.execute();
             return true;

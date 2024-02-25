@@ -73,8 +73,8 @@ public class Medical_info extends ID implements i_medical_info {
             res = "Unfit for service(";
         }
         return "Candidate №" +getId()+
-                " Height: " + height +"kg"+
-                " Weight: " + weight +"cm"+
+                " Height: " + height +"cm"+
+                " Weight: " + weight +"kg"+
                 " Vision: " + vision+
                 " RESULT: " + res;
     }

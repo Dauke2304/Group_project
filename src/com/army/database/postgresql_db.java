@@ -12,9 +12,11 @@ public class postgresql_db implements postgresql_idb {
             Connection cn = DriverManager.getConnection(connectionUrl, "postgres", "did12321");
 
             return cn;
+        } catch (ClassNotFoundException e) {
+            System.out.println("Failed to load PostgreSQL JDBC driver: " + e.getMessage());
+            return null;
         } catch (Exception e) {
             System.out.println("Failed connection: " + e.getMessage());
-
             return null;
         }
     }
